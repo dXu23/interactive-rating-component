@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <title>Frontend Mentor | Interactive rating component</title>
+  </head>
+  <body>
+    <main>
+      <div id="container">
+        <form>
+          <div id="star-div">
+            <img src="images/icon-star.svg">
+          </div>
+          <fieldset>
+            <legend>How did we do?</legend>
+            <p>
+              Please let us know how we did with your support
+              request. All feedback is appreciated to help us
+              improve our offering!
+            </p>
+
+            <div class="ratings-btns">
+              <input id="rating-1" name="rating" value="1" type="radio" class="radio-hidden" required>
+              <label for="rating-1">1</label>
+
+              <input id="rating-2" name="rating" value="2" type="radio" class="radio-hidden" required>
+              <label for="rating-2">2</label>
+
+              <input id="rating-3" name="rating" value="3" type="radio" class="radio-hidden" required>
+              <label for="rating-3">3</label>
+
+              <input id="rating-4" name="rating" value="4" type="radio" class="radio-hidden" required>
+              <label for="rating-4">4</label>
+
+              <input id="rating-5" name="rating" value="5" type="radio" class="radio-hidden" required>
+              <label for="rating-5">5</label>
+            </div>
+
+            <button type="submit">SUBMIT</button>
+          </fieldset>
+        </form>
+      </div>
+    </main>
+
+    <template id="thanks-template">
+      <style>
+        #thanks {
+          text-align: center;
+          padding: 0.5em;
+        }
+
+        h2 {
+          margin-top: 1.2em;
+          margin-bottom: 0;
+          color: var(--text1);
+        }
+
+        p {
+          font-size: 0.9475rem;
+          line-height: 1.6;
+          color: var(--text2);
+        }
+
+        .selection {
+          font-size: 0.9475rem;
+          color: var(--accent);
+          background-color: var(--bg2);
+          border-radius: 15px;
+          width: 55%;
+          padding: 0.5em 0.5em;
+          margin: 2.2em auto 0.8em auto;
+          max-width: 300px;
+        }
+      </style>
+      <div id="thanks">
+        <img src="images/illustration-thank-you.svg">
+        <div class="selection">You selected <slot name="rating"></slot> out of 5</div>
+        <h2>Thank you!</h2>
+        <p>
+          We appreciate you taking the time to give a 
+          rating. If you ever need more support, don't
+          hesitate to get in touch!
+        </p>
+      </div>
+    </template>
+    
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by dXu23
+  </footer>
+  <script src="index.js" defer></script>
+</body>
+</html>

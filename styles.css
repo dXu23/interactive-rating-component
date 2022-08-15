@@ -1,0 +1,132 @@
+
+:root {
+  --accent: hsl(25, 97%, 53%); /* Orange */
+  --text1: hsl(0, 0%, 100%); /* White */
+  --text2: hsl(216, 12%, 54%); /* Medium gray */
+  --selected: hsl(217, 12%, 63%); /* Light gray */
+  --bg1: hsl(215, 23%, 14%); /* Very dark blue */
+  --bg2: hsl(213, 19%, 18%); /* Dark blue */
+}
+
+body {
+  background-color: hsl(216, 12%, 8%)
+}
+
+html {
+  font-family: 'Overpass', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#container {
+  background-color: var(--bg1);
+  border-radius: 15px;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1.3em;
+}
+
+#star-div {
+  margin-left: 12px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bg2);
+}
+
+fieldset {
+  margin-top: 1.6em;
+  border-style: none;
+}
+
+legend {
+  color: var(--text1);
+  font-size: 1.5rem;
+  margin-left: -0.2em;
+}
+
+p {
+  color: var(--text2);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  margin-top: 0.2em;
+}
+
+input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+}
+
+.ratings-btns {
+  max-width: 360px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 14%;
+  color: var(--text2);
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  background-color: var(--bg2);
+}
+
+input[type="radio"]:checked + label {
+  background-color: var(--selected);
+  color: var(--text1);
+}
+
+label:active, label:hover {
+  background-color: var(--accent) !important;
+  color: var(--text1) !important;
+}
+
+button[type="submit"] {
+  margin-top: 2em;
+  font-weight: 700;
+  letter-spacing: 3px;
+  font-size: 0.9rem;
+  background-color: var(--accent);
+  color: var(--text1);
+  width: 100%;
+  max-width: 360px;
+  border: none;
+  padding: 1em 1.5em;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: var(--text1);
+  color: var(--accent);
+}
+
+.attribution { 
+  color: #efefef;
+  font-size: 11px; 
+  text-align: center; 
+  position: absolute;
+  box-sizing: border-box;
+  padding-bottom: 3em;
+  width: 100vw;
+  text-align: center;
+  left: 0;
+  bottom: 0;
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
