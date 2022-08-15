@@ -33,11 +33,9 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://coldfix.dev/frontend-mentor/interactive-rating-component/index.html](https://coldfix.dev/frontend-mentor/interactive-rating-component/index.html)
 
 ## My process
 
@@ -67,6 +65,4 @@ I learned how to style inputs of type radio, as well as how to use templates and
 - Frontend Mentor - [@dXu23](https://www.frontendmentor.io/profile/dXu23)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
-
-## Acknowledgments
 
